@@ -15,4 +15,4 @@ Full assembler source for the "Dadplazz" demo by The Senior Dads, which was rele
 * Run "DADPLAZZ.PRG".
 
 ## Folders
-* `COMPILED` - Original compiled demo and accompanying [README](https://github.com/theseniordads/airdirtdemo/blob/main/AIR_DIRT.SED/AIR_DIRT.TXT).
+* `COMPILED` - Original compiled demo and accompanying [README](https://github.com/theseniordads/dadplazz/blob/master/COMPILED/README.1ST).
