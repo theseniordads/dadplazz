@@ -7,7 +7,7 @@ Full assembler source for the "Dadplazz" demo by The Senior Dads, which was rele
 * ... Alternatively, a decent emulator like Hatari, configured as above.
 * Devpac 3 to assemble the code.
 
-## How to assemble
+## How to assemble on an Atari Falcon 030
 * Load "DADPLAZZ.S" into Devpac 3.
 * Make sure settings are set to assemble to Motorola 68030!
 * Assemble to executable file "DADPLAZZ.PRG".
