@@ -14,10 +14,9 @@ Full assembler source for the "Dadplazz" demo by The Senior Dads, which was rele
 * Set desktop to true colour mode low res.
 * Run "DADPLAZZ.PRG".
 
-
 ## How to assemble on modern systems
 
-This requires [VASM](http://sun.hasenbraten.de/vasm/https:/) and [Vlink](http://www.compilers.de/vlink.html), which you can get for most modern systems.
+This requires [VASM](http://sun.hasenbraten.de/vasm/) and [Vlink](http://www.compilers.de/vlink.html), which you can get for most modern systems.
 
 To compile the source:
 
