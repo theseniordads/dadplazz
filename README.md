@@ -14,5 +14,18 @@ Full assembler source for the "Dadplazz" demo by The Senior Dads, which was rele
 * Set desktop to true colour mode low res.
 * Run "DADPLAZZ.PRG".
 
+
+## How to assemble on modern systems
+
+This requires [VASM](http://sun.hasenbraten.de/vasm/https:/) and [Vlink](http://www.compilers.de/vlink.html), which you can get for most modern systems.
+
+To compile the source:
+
+`vasmm68k_mot DADPLAZZ.S build/main.o -m68030 -Felf -noesc -quiet -no-opt`
+
+To turn the compiled binary to an Atari executable:
+
+`vlink build/main.o build/DADPLAZZ.PRG -bataritos`
+
 ## Folders
 * `COMPILED` - Original compiled demo and accompanying [README](https://github.com/theseniordads/dadplazz/blob/master/COMPILED/README.1ST).

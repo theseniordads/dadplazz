@@ -1,6 +1,29 @@
 * Senior Dads Microdemo! (128 bytes)
 ; This is actually a bit of a challenge!
 
+; (Demo originally released on 20 January 1998.
+;
+;  This dates from when there was a fashion for 128 byte demos on the Atari platforms.
+;  This just blats stuff onto a true-colour screen, changing the value blatted so that 
+;  it changes colour over time. You have to run this in true-colour lo-res mode, as there 
+;  wasn't space for codce to change to ture-colour mode! You also have to reset the machine
+;  to exit the demo, as there wasn't space for code to exit the demo either! 
+;
+;  You'll see that it uses funky 68030 offsetting instructions to do the blatting, so if 
+;  you're assembling this using Vasm, make sure you use the -m68030 option to assemble it.
+;
+;  If you're wondering why a '128 byte' demo is actually 144 bytes, it's because of the
+;  Atari TOS program header at the start of the file. The rules of 'size' demo competitions 
+;  are generally that the size of the demo does not include the size of the program header, 
+;  so as long as the code itself is 128 bytes, it's a 128 byte demo.}
+
+ * ## Assembly information ##
+ * Assembly format: Devpac 3 (VASM compatible)
+ * Target processor: Motorola 68030
+ * Exectuable format: Atari TOS .PRG
+ * Minimum hardware: Atari Falcon 030 with 4MB RAM
+
+
 vidregs		equ	$ffff8200
 vidlo		equ	$ffff820d
 
@@ -14,7 +37,8 @@ timer	equ	$468
 
 	bra.s	main
 	dc.b	'dAdPlAz!'
-main	pea	0.l
+main
+	pea	0.l
 	move	#$20,-(sp)
 	trap	#1
 
